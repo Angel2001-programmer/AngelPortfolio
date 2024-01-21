@@ -1,15 +1,12 @@
 import './App.css';
-
+import { BrowserRouter } from 'react-router-dom';
+import RoutesNav from './RoutesNav';
 function App() {
   return (
     <div className='App'>
-      <h1 className='text-left font-bold text-[50px] ml-3'>Project Setup :D</h1>
-      <h1 className='text-left font-bold text-[50px] ml-3'>
-        TailWindCSS installed. ✅
-      </h1>
-      <h1 className='text-left font-bold text-[50px] ml-3'>
-        React Router installed. ✅
-      </h1>
+      <BrowserRouter>
+        <RoutesNav />
+      </BrowserRouter>
     </div>
   );
 }
