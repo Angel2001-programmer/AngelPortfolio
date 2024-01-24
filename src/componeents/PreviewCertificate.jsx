@@ -10,7 +10,7 @@ const PreviewItem = (props) => {
     >
       <p className='text-[40px]'>{props.name}</p>
       <img
-        className='w-[436px] h-[461px] bg-[#D9D9D9]'
+        className='w-[70em] h-[100em] bg-[#D9D9D9]'
         src={props.image}
         alt={props.alt}
       ></img>

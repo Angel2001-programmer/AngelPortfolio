@@ -1,6 +1,10 @@
 import PreviewList from '../componeents/PreviewList';
-
+import Project from '../componeents/Project';
+import { useContext } from 'react';
+import { AppContext } from '../App';
 const Projects = () => {
+  const [clicked, setClicked] = useContext(AppContext);
+
   const list = [
     { text: 0 },
     { text: 1 },
@@ -10,7 +14,7 @@ const Projects = () => {
     { text: 5 },
   ];
   return (
-    <div className=''>
+    <div>
       <header>
         <ul className='flex flex-col gap-5 flex-wrap justify-end md:flex-row md:mr-[100px] sm:md:mr-[100px]'>
           <li className='text-[40px] cursor-pointer'>
@@ -27,9 +31,15 @@ const Projects = () => {
           </li>
         </ul>
       </header>
-      <main className='mt-8'>
-        <PreviewList list={list} />
-      </main>
+      {!clicked ? (
+        <main className='mt-8'>
+          <PreviewList list={list} />
+        </main>
+      ) : (
+        <div className='mt-8'>
+          <Project />
+        </div>
+      )}
     </div>
   );
 };
