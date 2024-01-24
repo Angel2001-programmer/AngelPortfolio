@@ -6,12 +6,8 @@ const Projects = () => {
   const [clicked, setClicked] = useContext(AppContext);
 
   const list = [
-    { text: 0 },
-    { text: 1 },
-    { text: 2 },
-    { text: 3 },
-    { text: 4 },
-    { text: 5 },
+    { text: 'IntroVerse', image: require('../assets/images/Introverse.png') },
+    { text: 'MG Music' },
   ];
   return (
     <div>
