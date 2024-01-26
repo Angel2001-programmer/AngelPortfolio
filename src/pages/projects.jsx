@@ -6,8 +6,18 @@ const Projects = () => {
   const [clicked, setClicked] = useContext(AppContext);
 
   const list = [
-    { text: 'IntroVerse', image: require('../assets/images/Introverse.png') },
-    { text: 'MG Music' },
+    {
+      id: 0,
+      text: 'IntroVerse',
+      image: require('../assets/images/Introverse.png'),
+      video: '',
+    },
+    {
+      id: 1,
+      text: 'MG Music',
+      image: require('../assets/images/mg.png'),
+      video: '',
+    },
   ];
   return (
     <div>
@@ -33,7 +43,7 @@ const Projects = () => {
         </main>
       ) : (
         <div className='mt-8'>
-          <Project />
+          <Project item={list[0]} />
         </div>
       )}
     </div>

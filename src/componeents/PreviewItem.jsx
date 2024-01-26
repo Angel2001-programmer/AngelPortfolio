@@ -5,12 +5,12 @@ const PreviewItem = (props) => {
 
   return (
     <div
-      className='flex flex-col'
+      className='grid grid-cols-1 gap-2 place-items-center'
       onClick={() => setClicked(true)}
     >
       <p className='text-[40px]'>{props.name}</p>
       <img
-        className='w-[800px] h-[461px] bg-[#D9D9D9]'
+        className='h-[450px] bg-[#D9D9D9]'
         src={props.img}
         alt={props.alt}
       ></img>

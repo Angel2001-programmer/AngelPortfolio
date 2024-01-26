@@ -2,7 +2,7 @@ const Home = () => {
   return (
     <div>
       <header>
-        <ul className='flex flex-row gap-5 flex-wrap mr-[100px] justify-end'>
+        <ul className='flex flex-col gap-5 flex-wrap justify-end md:flex-row md:mr-[100px] sm:md:mr-[100px]'>
           <li className='text-[40px] underline cursor-pointer'>
             <a href='/'>Home</a>
           </li>
