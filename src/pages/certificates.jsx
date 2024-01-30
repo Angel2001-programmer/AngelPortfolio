@@ -1,4 +1,4 @@
-import PreviewList from '../componeents/PreviewList';
+import CertificatesList from '../componeents/CertificatesList';
 const Certificates = () => {
   const list = [
     {
@@ -29,7 +29,7 @@ const Certificates = () => {
       <main className='mt-8'>
         <main className='mt-8'>
           <main className='mt-8'>
-            <PreviewList list={list} />
+            <CertificatesList list={list} />
           </main>
         </main>
       </main>

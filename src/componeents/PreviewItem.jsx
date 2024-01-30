@@ -1,12 +1,8 @@
-import { useContext } from 'react';
-import { AppContext } from '../App';
 const PreviewItem = (props) => {
-  const [clicked, setClicked] = useContext(AppContext);
-
   return (
     <div
       className='grid grid-cols-1 gap-2 place-items-center'
-      onClick={() => setClicked(true)}
+      onClick={props.click}
     >
       <p className='text-[40px]'>{props.name}</p>
       <img

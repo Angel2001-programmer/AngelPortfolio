@@ -1,15 +1,40 @@
 import PreviewItem from '../componeents/PreviewItem';
+import { useState } from 'react';
+import Project from '../componeents/Project';
 
 const PreviewList = (props) => {
+  const [clicked, setClicked] = useState(false);
+  const [item, setItem] = useState();
+
+  const clickedHandler = (name, video, reason0, reason1, reason2) => {
+    setItem({ name: name, video: video, reason0, reason1, reason2 });
+    setClicked(true);
+  };
+
   return (
-    <div className='grid md:grid-cols-2 sm:grid-cols-1 ml-6 mr-6'>
-      {props.list.map((item) => (
-        <PreviewItem
-          name={item.text}
-          img={item.image}
-          alt={item.alt}
-        />
-      ))}
+    <div>
+      {!clicked ? (
+        <div className='grid md:grid-cols-2 sm:grid-cols-1 ml-6 mr-6'>
+          {props.list.map((item) => (
+            <PreviewItem
+              name={item.text}
+              img={item.image}
+              alt={item.alt}
+              click={() =>
+                clickedHandler(
+                  item.text,
+                  item.video,
+                  item.reason0,
+                  item.reason1,
+                  item.reason2
+                )
+              }
+            />
+          ))}
+        </div>
+      ) : (
+        <Project item={item} />
+      )}
     </div>
   );
 };
