@@ -5,7 +5,6 @@ const Certificates = () => {
       text: 'CFG Web Developer KickStarter Course',
       image: require('../assets/images/WebCertificate.png'),
     },
-    // { text: 'CFG Web Developer KickStarter Course', image: null },
   ];
 
   return (

@@ -20,7 +20,7 @@ const Home = () => {
       <main className='mt-8'>
         <div className='flex flex-row mt-8 ml-8 mr-8'>
           <img
-            className='flex max-h-[30%] max-w-[30%] border-[6px] border-[#39A7FF] border-solid rounded-[20px] mt-[60px] drop-shadow-[0_10px_10px_#5570FF]'
+            className='flex min-w-[600px] max-h-[600px] border-[6px] border-[#39A7FF] border-solid rounded-[20px] mt-[60px] drop-shadow-[0_10px_10px_#5570FF] sm:max-w-[100px]'
             src={require('../assets/images/angel.jpeg')}
             alt='Owner of Portfolio.'
           />

@@ -41,18 +41,14 @@ const Testimonials = () => {
   let backArrow = (
     <img
       className='rotate-180'
-      onClick={() => {
-        setCount(0);
-      }}
+      onClick={() => setCount(0)}
       src={require('../assets/images/fillinArrow.png')}
       alt='one back arrow.'
     />
   );
   let forwardArrow = (
     <img
-      onClick={() => {
-        setCount(1);
-      }}
+      onClick={() => setCount(1)}
       src={require('../assets/images/fillinArrow.png')}
       alt='one back arrow.'
     />
