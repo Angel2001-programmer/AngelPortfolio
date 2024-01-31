@@ -54,8 +54,6 @@ const Testimonials = () => {
     />
   );
 
-  console.log(count);
-
   if (count <= 0) {
     backArrow = (
       <img
@@ -85,6 +83,9 @@ const Testimonials = () => {
           </li>
           <li className='text-[40px] cursor-pointer'>
             <a href='/certificates'>Certificates</a>
+          </li>
+          <li className='text-[40px] cursor-pointer'>
+            <a href='/resume'>Resume</a>
           </li>
           <li className='text-[40px] underline cursor-pointer'>
             <a href='/testimonials'>Testimonials</a>

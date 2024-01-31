@@ -13,6 +13,9 @@ const Home = () => {
             <a href='/certificates'>Certificates</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
+            <a href='/resume'>Resume</a>
+          </li>
+          <li className='text-[40px] cursor-pointer'>
             <a href='/testimonials'>Testimonials</a>
           </li>
         </ul>
