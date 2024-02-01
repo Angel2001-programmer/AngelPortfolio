@@ -14,6 +14,7 @@ const Projects = () => {
         'The challenges we faced was getting database populated with the correct data when you setup this project you must insert the data yourself into database to be able to view the data on the website. This will be a struggle especially if you are not familiar with backend development. Me and my team fixed this by having a pair programming session and my colleague told me to insert the data into database by using mySQLWorkbench.',
       reason2:
         'Some of UI I would do differently such as about page I feel the images are far too big compared to rest of the website. It would be better if this were in rows instead.',
+      repo: 'https://github.com/Angel2001-programmer/Introverse',
     },
     {
       id: 1,
@@ -25,6 +26,7 @@ const Projects = () => {
       reason1:
         'Challenges I faced were making the items from the list appear I had to use several tutorials to figure out how to display many items from a list.',
       reason2: 'I would show real data into lists and not place holders.',
+      repo: 'https://github.com/Angel2001-programmer/MG-Music',
     },
   ];
 

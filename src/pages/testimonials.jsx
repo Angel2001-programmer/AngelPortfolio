@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Testimonials = () => {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(1);
   const testimonials = [
     {
       image: require('../assets/images/manager.jpeg'),
@@ -38,6 +38,8 @@ const Testimonials = () => {
       role: `Angel's teacher at Coleg y Cymoedd`,
     },
   ];
+  console.log(count);
+
   let backArrow = (
     <img
       className='rotate-180'
@@ -66,7 +68,7 @@ const Testimonials = () => {
     forwardArrow = (
       <img
         src={require('../assets/images/outlineArrow.png')}
-        alt='one back arrow.'
+        alt='one forward arrow.'
       />
     );
   }

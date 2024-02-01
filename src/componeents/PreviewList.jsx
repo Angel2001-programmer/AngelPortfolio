@@ -6,8 +6,8 @@ const PreviewList = (props) => {
   const [clicked, setClicked] = useState(false);
   const [item, setItem] = useState();
 
-  const clickedHandler = (name, video, reason0, reason1, reason2) => {
-    setItem({ name: name, video: video, reason0, reason1, reason2 });
+  const clickedHandler = (name, video, reason0, reason1, reason2, repo) => {
+    setItem({ name: name, video: video, reason0, reason1, reason2, repo });
     setClicked(true);
   };
 
@@ -26,7 +26,8 @@ const PreviewList = (props) => {
                   item.video,
                   item.reason0,
                   item.reason1,
-                  item.reason2
+                  item.reason2,
+                  item.repo
                 )
               }
             />

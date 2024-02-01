@@ -36,6 +36,9 @@ const Project = (props) => {
           What would you do differently?
         </h3>
         <p className='text-[18px]'>{props.item.reason2}</p>
+        <li className='font-bold text-[25px] mt-5 list-none'>
+          <a href={props.item.repo}>GitHub </a>
+        </li>
       </div>
     </div>
   );
