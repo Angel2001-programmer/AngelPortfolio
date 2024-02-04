@@ -2,7 +2,7 @@ const Resume = () => {
   return (
     <>
       <header>
-        <ul className='flex flex-col gap-5 flex-wrap justify-end md:flex-row md:mr-[100px] sm:md:mr-[100px]'>
+        <ul className='flex gap-5 flex-wrap justify-end mr-[100px] xl:flex-row md: flex-col'>
           <li className='text-[40px] cursor-pointer'>
             <a href='/'>Home</a>
           </li>
@@ -20,9 +20,9 @@ const Resume = () => {
           </li>
         </ul>
       </header>
-      <div className='flex flex-col items-center'>
+      <div className='flex flex-col items-center sm: mt-4'>
         <h1 className='text-[40px] mt-4'>Angel's Resume</h1>
-        <div className=' bg-slate-300 p-2'>
+        <div className='bg-slate-300 p-2 sm: mx-8'>
           <img
             src={require('../assets/images/AngelWitchellCV.jpg')}
             alt="Angel's resume"

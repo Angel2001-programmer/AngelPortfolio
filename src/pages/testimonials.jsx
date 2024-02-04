@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 const Testimonials = () => {
-  const [count, setCount] = useState(1);
+  const [count, setCount] = useState(0);
   const testimonials = [
     {
       image: require('../assets/images/manager.jpeg'),
@@ -42,41 +42,26 @@ const Testimonials = () => {
 
   let backArrow = (
     <img
-      className='rotate-180'
+      className='rotate-180 h-10 w-10 cursor-pointer'
       onClick={() => setCount(0)}
       src={require('../assets/images/fillinArrow.png')}
       alt='one back arrow.'
     />
   );
+
   let forwardArrow = (
     <img
-      onClick={() => setCount(1)}
+      className='h-10 w-10 cursor-pointer'
+      onClick={() => setCount(0)}
       src={require('../assets/images/fillinArrow.png')}
       alt='one back arrow.'
     />
   );
 
-  if (count <= 0) {
-    backArrow = (
-      <img
-        className='rotate-180'
-        src={require('../assets/images/outlineArrow.png')}
-        alt='one back arrow.'
-      />
-    );
-  } else {
-    forwardArrow = (
-      <img
-        src={require('../assets/images/outlineArrow.png')}
-        alt='one forward arrow.'
-      />
-    );
-  }
-
   return (
     <div>
       <header>
-        <ul className='flex flex-col gap-5 flex-wrap justify-end md:flex-row md:mr-[100px] sm:md:mr-[100px]'>
+        <ul className='flex gap-5 flex-wrap justify-end mr-[100px] xl:flex-row md: flex-col'>
           <li className='text-[40px] cursor-pointer'>
             <a href='/'>Home</a>
           </li>
@@ -94,12 +79,12 @@ const Testimonials = () => {
           </li>
         </ul>
       </header>
-      <main className='mt-8'>
+      <main className='mr-8 ml-8 sm: mt-10'>
         <div className='flex items-center justify-center min-h-[90vh]'>
           <div className='flex flex-col items-end'>
-            <div className='flex h-[10%] p-3 w-[50em] bg-[#D9D9D9] shadow-lg rounded-[10px]'>
+            <div className='flex min-h-[10vh] ml-8 mr-8 p-3 bg-[#D9D9D9] shadow-lg rounded-[10px]'>
               <img
-                className='bg-[#F6F4F4] h-[5em] w-[5em] rounded-[15px] drop-shadow-md border-4 border-gray-400'
+                className='bg-[#F6F4F4] h-[5em] max-w-[100px] rounded-[15px] drop-shadow-md border-4 border-gray-400'
                 src={testimonials[count].image}
                 alt='manager'
               />
@@ -109,7 +94,7 @@ const Testimonials = () => {
                 <p className='font-bold'>{testimonials[count].role}</p>
               </div>
             </div>
-            <div className='flex flex-row h-9 w-9 mr-12 mt-3 gap-5'>
+            <div className='flex justify-end mr-8 mt-4 flex-row gap-5'>
               {backArrow}
               {forwardArrow}
             </div>

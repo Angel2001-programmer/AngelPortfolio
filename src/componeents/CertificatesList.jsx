@@ -3,7 +3,7 @@ import PreviewItem from './PreviewItem';
 const CertificatesList = (props) => {
   return (
     <div>
-      <div className='grid md:grid-cols-2 sm:grid-cols-1 ml-6 mr-6'>
+      <div className='grid xl:grid-cols-2 md:grid-cols-1 ml-6 mr-6'>
         {props.list.map((item) => (
           <PreviewItem
             name={item.text}

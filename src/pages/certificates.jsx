@@ -5,12 +5,16 @@ const Certificates = () => {
       text: 'CFG Web Developer KickStarter Course',
       image: require('../assets/images/WebCertificate.png'),
     },
+    {
+      text: 'CFG Full Stack Development Bootcamp',
+      image: require('../assets/images/BootcampCertificate.jpg'),
+    },
   ];
 
   return (
     <div>
       <header>
-        <ul className='flex flex-col gap-5 flex-wrap justify-end md:flex-row md:mr-[100px] sm:md:mr-[100px]'>
+        <ul className='flex gap-5 flex-wrap justify-end mr-[100px] xl:flex-row md: flex-col'>
           <li className='text-[40px] cursor-pointer'>
             <a href='/'>Home</a>
           </li>
@@ -29,11 +33,7 @@ const Certificates = () => {
         </ul>
       </header>
       <main className='mt-8'>
-        <main className='mt-8'>
-          <main className='mt-8'>
-            <CertificatesList list={list} />
-          </main>
-        </main>
+        <CertificatesList list={list} />
       </main>
     </div>
   );

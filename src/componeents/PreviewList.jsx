@@ -14,7 +14,7 @@ const PreviewList = (props) => {
   return (
     <div>
       {!clicked ? (
-        <div className='grid md:grid-cols-2 sm:grid-cols-1 ml-6 mr-6'>
+        <div className='grid xl:grid-cols-2 md:grid-cols-1 ml-6 mr-6'>
           {props.list.map((item) => (
             <PreviewItem
               name={item.text}

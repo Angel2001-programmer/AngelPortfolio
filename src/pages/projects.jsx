@@ -33,7 +33,7 @@ const Projects = () => {
   return (
     <div>
       <header>
-        <ul className='flex flex-col gap-5 flex-wrap justify-end md:flex-row md:mr-[100px] sm:md:mr-[100px]'>
+        <ul className='flex gap-5 flex-wrap justify-end mr-[100px] xl:flex-row md: flex-col'>
           <li className='text-[40px] cursor-pointer'>
             <a href='/'>Home</a>
           </li>

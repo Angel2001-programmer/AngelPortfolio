@@ -2,7 +2,12 @@ const Home = () => {
   return (
     <div>
       <header>
-        <ul className='flex flex-col gap-5 flex-wrap justify-end md:flex-row md:mr-[100px] sm:md:mr-[100px]'>
+        <ul
+          className='flex flex-row gap-5 flex-wrap justify-end
+        xl:flex-row 
+        xl:mr-[100px]
+        md: flex-col'
+        >
           <li className='text-[40px] underline cursor-pointer'>
             <a href='/'>Home</a>
           </li>
@@ -21,13 +26,23 @@ const Home = () => {
         </ul>
       </header>
       <main className='mt-8'>
-        <div className='flex flex-row mt-8 ml-8 mr-8'>
+        <div
+          className='
+          flex mt-8 
+          xl:flex-row 
+          xl:ml-8
+          xl:mr-8 
+          sm: flex-col
+          sm: ml-0
+          sm: mr-0
+          sm: items-center'
+        >
           <img
-            className='flex min-w-[600px] max-h-[600px] border-[6px] border-[#39A7FF] border-solid rounded-[20px] mt-[60px] drop-shadow-[0_10px_10px_#5570FF] sm:max-w-[100px]'
+            className='flex w-[50vh] h-[50vh] border-[6px] border-[#39A7FF] border-solid rounded-[20px] mt-[60px] drop-shadow-[0_10px_10px_#5570FF]'
             src={require('../assets/images/angel.jpeg')}
             alt='Owner of Portfolio.'
           />
-          <h1 className='ml-6 mr-6 text-[30px] text-left'>
+          <h1 className='ml-6 mr-6 text-[30px] text-left md: mt-8'>
             Welcome to my portfolio my name is Angel Witchell and I have had a
             passion for technology since I was a little girl. The reason why I
             wanna become a developer is because tech has helped me as a kid when
