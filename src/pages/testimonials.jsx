@@ -38,25 +38,41 @@ const Testimonials = () => {
       role: `Angel's teacher at Coleg y Cymoedd`,
     },
   ];
-  console.log(count);
 
   let backArrow = (
     <img
-      className='rotate-180 h-10 w-10 cursor-pointer'
+      className='rotate-180 h-12'
       onClick={() => setCount(0)}
       src={require('../assets/images/fillinArrow.png')}
       alt='one back arrow.'
+    />
+  );
+  let forwardArrow = (
+    <img
+      className='h-12'
+      src={require('../assets/images/fillinArrow.png')}
+      alt='one back arrow.'
+      onClick={() => setCount(1)}
     />
   );
 
-  let forwardArrow = (
-    <img
-      className='h-10 w-10 cursor-pointer'
-      onClick={() => setCount(0)}
-      src={require('../assets/images/fillinArrow.png')}
-      alt='one back arrow.'
-    />
-  );
+  if (count <= 0) {
+    backArrow = (
+      <img
+        className='rotate-180 h-12'
+        src={require('../assets/images/outlineArrow.png')}
+        alt='one back arrow.'
+      />
+    );
+  } else {
+    forwardArrow = (
+      <img
+        className='h-12'
+        src={require('../assets/images/outlineArrow.png')}
+        alt='one back arrow.'
+      />
+    );
+  }
 
   return (
     <div>
