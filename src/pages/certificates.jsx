@@ -19,16 +19,16 @@ const Certificates = () => {
             <a href='/'>Home</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
-            <a href='/project'>Projects</a>
+            <a href='/AngelPortfolio/project'>Projects</a>
           </li>
           <li className='text-[40px] underline cursor-pointer'>
-            <a href='/certificates'>Certificates</a>
+            <a href='/AngelPortfolio/certificates'>Certificates</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
-            <a href='/resume'>Resume</a>
+            <a href='/AngelPortfolio/resume'>Resume</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
-            <a href='/testimonials'>Testimonials</a>
+            <a href='/AngelPortfolio/testimonials'>Testimonials</a>
           </li>
         </ul>
       </header>
