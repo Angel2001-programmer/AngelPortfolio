@@ -1,6 +1,4 @@
 import PreviewList from '../componeents/PreviewList';
-import Project from '../componeents/Project';
-// import { useState } from 'react';
 const Projects = () => {
   const list = [
     {
