@@ -4,7 +4,7 @@ const Resume = () => {
       <header>
         <ul className='flex gap-5 flex-wrap justify-end mr-[100px] xl:flex-row md: flex-col'>
           <li className='text-[40px] cursor-pointer'>
-            <a href='/'>Home</a>
+            <a href='/AngelPortfolio/'>Home</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
             <a href='/AngelPortfolio/project'>Projects</a>

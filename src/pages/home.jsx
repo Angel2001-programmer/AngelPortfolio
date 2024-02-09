@@ -9,7 +9,7 @@ const Home = () => {
         md: flex-col'
         >
           <li className='text-[40px] underline cursor-pointer'>
-            <a href='/'>Home</a>
+            <a href='/AngelPortfolio/'>Home</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
             <a href='/AngelPortfolio/project'>Projects</a>
