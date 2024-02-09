@@ -10,27 +10,27 @@ const RoutesNav = () => {
     <Routes>
       <Route
         exact
-        path='/AngelPortfolio/'
+        path='/'
         element={<Home />}
       />
       <Route
         exact
-        path='/AngelPortfolio/project'
+        path='/project'
         element={<Project />}
       />
       <Route
         exact
-        path='/AngelPortfolio/certificates'
+        path='/certificates'
         element={<Certificate />}
       />
       <Route
         exact
-        path='/AngelPortfolio/resume'
+        path='/resume'
         element={<Resume />}
       />
       <Route
         exact
-        path='/AngelPortfolio/testimonials'
+        path='/testimonials'
         element={<Testimonial />}
       />
     </Routes>

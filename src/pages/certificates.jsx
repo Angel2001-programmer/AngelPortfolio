@@ -16,19 +16,19 @@ const Certificates = () => {
       <header>
         <ul className='flex gap-5 flex-wrap justify-end mr-[100px] xl:flex-row md: flex-col'>
           <li className='text-[40px] cursor-pointer'>
-            <a href='/AngelPortfolio/'>Home</a>
+            <a href='/'>Home</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
-            <a href='/AngelPortfolio/project'>Projects</a>
+            <a href='/project'>Projects</a>
           </li>
           <li className='text-[40px] underline cursor-pointer'>
-            <a href='/AngelPortfolio/certificates'>Certificates</a>
+            <a href='/certificates'>Certificates</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
-            <a href='/AngelPortfolio/resume'>Resume</a>
+            <a href='/resume'>Resume</a>
           </li>
           <li className='text-[40px] cursor-pointer'>
-            <a href='/AngelPortfolio/testimonials'>Testimonials</a>
+            <a href='/testimonials'>Testimonials</a>
           </li>
         </ul>
       </header>
