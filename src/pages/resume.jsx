@@ -24,7 +24,7 @@ const Resume = () => {
         <h1 className='text-[40px] mt-4'>Angel's Resume</h1>
         <div className='bg-slate-300 p-2 sm: mx-8'>
           <img
-            src={require('../assets/images/AngelWitchellCV.jpg')}
+            src={require('../assets/images/AngelWitchellCV.png')}
             alt="Angel's resume"
           />
         </div>
