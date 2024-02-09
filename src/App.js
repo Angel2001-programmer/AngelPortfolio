@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import RoutesNav from './RoutesNav';
 
 function App() {
